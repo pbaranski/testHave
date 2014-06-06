@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.vhealth.api.service.UserServiceTest">
+        <methods>
+          <include name="shouldFindAllUsers"/>
+          <include name="shouldUpdateUser"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="shouldAddUser"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="shouldFindExistingUser"/>
+          <include name="shouldDeleteUser"/>
+        </methods>
+      </class> <!-- com.vhealth.api.service.UserServiceTest -->
+      <class name="com.vhealth.api.dao.UserDaoTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="shouldSearchUserByUsername"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="shouldReturnNullIfUserNotFound"/>
+        </methods>
+      </class> <!-- com.vhealth.api.dao.UserDaoTest -->
+      <class name="com.vhealth.api.dao.ItemDaoTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="shouldReturnNullIfNotFindItemById"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="shouldReturnNullIfNotFindItemByName"/>
+          <include name="shouldFindItemById"/>
+          <include name="shouldFindItemItemName"/>
+        </methods>
+      </class> <!-- com.vhealth.api.dao.ItemDaoTest -->
+      <class name="com.vhealth.api.service.ItemAdminServiceTest">
+        <methods>
+          <include name="shouldAddItem"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="shouldFindItemById"/>
+          <include name="shouldDeleteItem"/>
+          <include name="shouldFindItemByName"/>
+          <include name="shouldUpdateItem"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.vhealth.api.service.ItemAdminServiceTest -->
+      <class name="com.vhealth.api.entity.AuditListenerTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="shouldAddModifiedOnDateAutomatically"/>
+          <include name="shouldAddCreateOnDateAutomatically"/>
+        </methods>
+      </class> <!-- com.vhealth.api.entity.AuditListenerTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

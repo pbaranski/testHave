@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-skipped">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods,  18 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.entity.AuditListenerTest" hash-for-method="shouldAddCreateOnDateAutomatically">shouldAddCreateOnDateAutomatically</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.ItemAdminServiceTest" hash-for-method="shouldAddItem">shouldAddItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.entity.AuditListenerTest" hash-for-method="shouldAddModifiedOnDateAutomatically">shouldAddModifiedOnDateAutomatically</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.UserServiceTest" hash-for-method="shouldAddUser">shouldAddUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.ItemAdminServiceTest" hash-for-method="shouldDeleteItem">shouldDeleteItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.UserServiceTest" hash-for-method="shouldDeleteUser">shouldDeleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.UserServiceTest" hash-for-method="shouldFindAllUsers">shouldFindAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.UserServiceTest" hash-for-method="shouldFindExistingUser">shouldFindExistingUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.ItemAdminServiceTest" hash-for-method="shouldFindItemById">shouldFindItemById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.dao.ItemDaoTest" hash-for-method="shouldFindItemById">shouldFindItemById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.ItemAdminServiceTest" hash-for-method="shouldFindItemByName">shouldFindItemByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.dao.ItemDaoTest" hash-for-method="shouldFindItemItemName">shouldFindItemItemName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.dao.ItemDaoTest" hash-for-method="shouldReturnNullIfNotFindItemById">shouldReturnNullIfNotFindItemById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.dao.ItemDaoTest" hash-for-method="shouldReturnNullIfNotFindItemByName">shouldReturnNullIfNotFindItemByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.dao.UserDaoTest" hash-for-method="shouldReturnNullIfUserNotFound">shouldReturnNullIfUserNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.dao.UserDaoTest" hash-for-method="shouldSearchUserByUsername">shouldSearchUserByUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.ItemAdminServiceTest" hash-for-method="shouldUpdateItem">shouldUpdateItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.vhealth.api.service.UserServiceTest" hash-for-method="shouldUpdateUser">shouldUpdateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="helpers.TestHelperTest" hash-for-method="shouldEncodeBase64userNameAndPassword">shouldEncodeBase64userNameAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.vhealth.api.service.UserServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddUser">
+                  </a> <!-- shouldAddUser -->
+                  <span class="method-name">shouldAddUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteUser">
+                  </a> <!-- shouldDeleteUser -->
+                  <span class="method-name">shouldDeleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFindAllUsers">
+                  </a> <!-- shouldFindAllUsers -->
+                  <span class="method-name">shouldFindAllUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFindExistingUser">
+                  </a> <!-- shouldFindExistingUser -->
+                  <span class="method-name">shouldFindExistingUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldUpdateUser">
+                  </a> <!-- shouldUpdateUser -->
+                  <span class="method-name">shouldUpdateUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.vhealth.api.dao.UserDaoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnNullIfUserNotFound">
+                  </a> <!-- shouldReturnNullIfUserNotFound -->
+                  <span class="method-name">shouldReturnNullIfUserNotFound</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldSearchUserByUsername">
+                  </a> <!-- shouldSearchUserByUsername -->
+                  <span class="method-name">shouldSearchUserByUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.vhealth.api.dao.ItemDaoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFindItemById">
+                  </a> <!-- shouldFindItemById -->
+                  <span class="method-name">shouldFindItemById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFindItemItemName">
+                  </a> <!-- shouldFindItemItemName -->
+                  <span class="method-name">shouldFindItemItemName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnNullIfNotFindItemById">
+                  </a> <!-- shouldReturnNullIfNotFindItemById -->
+                  <span class="method-name">shouldReturnNullIfNotFindItemById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldReturnNullIfNotFindItemByName">
+                  </a> <!-- shouldReturnNullIfNotFindItemByName -->
+                  <span class="method-name">shouldReturnNullIfNotFindItemByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.vhealth.api.service.ItemAdminServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddItem">
+                  </a> <!-- shouldAddItem -->
+                  <span class="method-name">shouldAddItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDeleteItem">
+                  </a> <!-- shouldDeleteItem -->
+                  <span class="method-name">shouldDeleteItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFindItemById">
+                  </a> <!-- shouldFindItemById -->
+                  <span class="method-name">shouldFindItemById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFindItemByName">
+                  </a> <!-- shouldFindItemByName -->
+                  <span class="method-name">shouldFindItemByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldUpdateItem">
+                  </a> <!-- shouldUpdateItem -->
+                  <span class="method-name">shouldUpdateItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.vhealth.api.entity.AuditListenerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddCreateOnDateAutomatically">
+                  </a> <!-- shouldAddCreateOnDateAutomatically -->
+                  <span class="method-name">shouldAddCreateOnDateAutomatically</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAddModifiedOnDateAutomatically">
+                  </a> <!-- shouldAddModifiedOnDateAutomatically -->
+                  <span class="method-name">shouldAddModifiedOnDateAutomatically</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">helpers.TestHelperTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldEncodeBase64userNameAndPassword">
+                  </a> <!-- shouldEncodeBase64userNameAndPassword -->
+                  <span class="method-name">shouldEncodeBase64userNameAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.vhealth.api.controller.ApiItemControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.controller.ApiItemValidationTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.controller.ApiUserControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.controller.ApiUserDetailsControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.dao.ItemDaoTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.dao.UserDaoTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.entity.AuditListenerTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.service.ItemAdminServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.service.ItemServiceUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.service.UserServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.vhealth.api.utils.UserDetailsExtractorTest&quot;/&gt;
+      &lt;class name=&quot;helpers.TestHelper&quot;/&gt;
+      &lt;class name=&quot;helpers.TestHelperTest&quot;/&gt;
+      &lt;class name=&quot;helpers.zTestGround.TestDBUnit&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (14 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'shouldEncodeBase64userNameAndPassword')
+data.setCell(0, 2, 'helpers.TestHelperTest')
+data.setCell(0, 3, 3);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'shouldUpdateItem')
+data.setCell(1, 2, 'com.vhealth.api.service.ItemAdminServiceTest')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shouldFindItemItemName')
+data.setCell(2, 2, 'com.vhealth.api.dao.ItemDaoTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'shouldAddCreateOnDateAutomatically')
+data.setCell(3, 2, 'com.vhealth.api.entity.AuditListenerTest')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'shouldReturnNullIfNotFindItemById')
+data.setCell(4, 2, 'com.vhealth.api.dao.ItemDaoTest')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldAddModifiedOnDateAutomatically')
+data.setCell(5, 2, 'com.vhealth.api.entity.AuditListenerTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldSearchUserByUsername')
+data.setCell(6, 2, 'com.vhealth.api.dao.UserDaoTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'shouldFindItemById')
+data.setCell(7, 2, 'com.vhealth.api.service.ItemAdminServiceTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'shouldFindAllUsers')
+data.setCell(8, 2, 'com.vhealth.api.service.UserServiceTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'shouldReturnNullIfUserNotFound')
+data.setCell(9, 2, 'com.vhealth.api.dao.UserDaoTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'shouldUpdateUser')
+data.setCell(10, 2, 'com.vhealth.api.service.UserServiceTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'shouldAddItem')
+data.setCell(11, 2, 'com.vhealth.api.service.ItemAdminServiceTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'shouldReturnNullIfNotFindItemByName')
+data.setCell(12, 2, 'com.vhealth.api.dao.ItemDaoTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'shouldDeleteUser')
+data.setCell(13, 2, 'com.vhealth.api.service.UserServiceTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'shouldFindItemById')
+data.setCell(14, 2, 'com.vhealth.api.dao.ItemDaoTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'shouldAddUser')
+data.setCell(15, 2, 'com.vhealth.api.service.UserServiceTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'shouldFindExistingUser')
+data.setCell(16, 2, 'com.vhealth.api.service.UserServiceTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'shouldFindItemByName')
+data.setCell(17, 2, 'com.vhealth.api.service.ItemAdminServiceTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'shouldDeleteItem')
+data.setCell(18, 2, 'com.vhealth.api.service.ItemAdminServiceTest')
+data.setCell(18, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vhealth.api.service.UserServiceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">shouldRejectAddingUserWithUsedUserName</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vhealth.api.utils.UserDetailsExtractorTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGetLoggedUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.entity.AuditListenerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">shouldAddCreateOnDateAutomatically</span>
+                <span class="method-start">4757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.entity.AuditListenerTest.shouldAddCreateOnDateAutomatically() throws jav...)</span>
+                <span class="method-start">4758 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.service.ItemAdminServiceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldFindItemById</span>
+                <span class="method-start">4762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.service.ItemAdminServiceTest.shouldFindItemById())</span>
+                <span class="method-start">4763 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldFindItemByName</span>
+                <span class="method-start">4769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.service.ItemAdminServiceTest.shouldFindItemByName())</span>
+                <span class="method-start">4769 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.dao.ItemDaoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldFindItemById</span>
+                <span class="method-start">4775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.dao.ItemDaoTest.shouldFindItemById())</span>
+                <span class="method-start">4776 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldFindItemItemName</span>
+                <span class="method-start">4780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.dao.ItemDaoTest.shouldFindItemItemName())</span>
+                <span class="method-start">4781 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnNullIfNotFindItemById</span>
+                <span class="method-start">4785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.dao.ItemDaoTest.shouldReturnNullIfNotFindItemById())</span>
+                <span class="method-start">4786 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnNullIfNotFindItemByName</span>
+                <span class="method-start">4790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.dao.ItemDaoTest.shouldReturnNullIfNotFindItemByName())</span>
+                <span class="method-start">4790 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">4794 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">helpers.TestHelperTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldEncodeBase64userNameAndPassword</span>
+                <span class="method-start">4795 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.dao.UserDaoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldReturnNullIfUserNotFound</span>
+                <span class="method-start">4799 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.dao.UserDaoTest.shouldReturnNullIfUserNotFound() throws java.lang.Except...)</span>
+                <span class="method-start">4799 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldSearchUserByUsername</span>
+                <span class="method-start">4803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.dao.UserDaoTest.shouldSearchUserByUsername() throws java.lang.Exception)</span>
+                <span class="method-start">4804 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">4808 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.service.UserServiceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldFindAllUsers</span>
+                <span class="method-start">4810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.service.UserServiceTest.shouldFindAllUsers() throws java.lang.Exception)</span>
+                <span class="method-start">4810 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldFindExistingUser</span>
+                <span class="method-start">4816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.vhealth.api.service.UserServiceTest.shouldFindExistingUser() throws java.lang.Except...)</span>
+                <span class="method-start">4816 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.entity.AuditListenerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">4823 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.service.UserServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">4826 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vhealth.api.service.ItemAdminServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">4829 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

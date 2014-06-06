@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <user username="testUserDetails" created_on="2013-11-11 16:46:53" modified_on="2013-11-11 16:46:53"
+          first_name="testItemServiceName" is_admin="true" last_name="testItemService" password="testPassword"/>
+    <item id="2" created_on="2013-11-11 16:46:53" modified_on="2013-11-11 16:46:53" amount="testAmount"
+          description="testDescription" end_time="2013-11-11 16:46:53" itemname="testItemDetailsName" price="5.5"
+          start_time="2013-11-11 16:46:53" user_username="testUserDetails"/>
+    <item id="3" created_on="2013-11-11 16:46:53" modified_on="2013-11-11 16:46:53" amount="testAmount"
+          description="testDescription" end_time="2013-11-11 16:46:53" itemname="testItemDetailsName3" price="5.5"
+          start_time="2013-11-11 16:46:53" user_username="testUserDetails"/>
+    <item id="4" created_on="2013-11-11 16:46:53" modified_on="2013-11-11 16:46:53" amount="testAmount"
+          description="testDescription" end_time="2013-11-11 16:46:53" itemname="testItemDetailsName4" price="5.5"
+          start_time="2013-11-11 16:46:53" user_username="testUserDetails"/>
+    <user username="testUserDetails2" created_on="2013-11-11 16:46:53" modified_on="2013-11-11 16:46:53"
+          first_name="testItemServiceName" is_admin="true" last_name="testItemService" password="testPassword"/>
+    <item id="5" created_on="2013-11-11 16:46:53" modified_on="2013-11-11 16:46:53" amount="testAmount"
+          description="testDescription" end_time="2013-11-11 16:46:53" itemname="testItemDetailsName" price="5.5"
+          start_time="2013-11-11 16:46:53" user_username="testUserDetails2"/>
+</dataset>

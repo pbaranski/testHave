@@ -1,0 +1,26 @@
+//UserServiceTest
+INSERT INTO user VALUES ('testUser1',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO user VALUES ('testUser3',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO user VALUES ('testUser4',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO user VALUES ('testUser5',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+//UserDaoTest
+INSERT INTO user VALUES ('testUser6',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+
+
+//ItemServiceTest
+INSERT INTO user VALUES ('testUserItemService',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO item VALUES (1,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testAmount','testDescription',CURRENT_TIMESTAMP,'testItemServiceName',5.5,CURRENT_TIMESTAMP,'testUserItemService');
+
+//ItemDaoTest
+INSERT INTO user VALUES ('testUserItemDao',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO item VALUES (2,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testAmount','testDescription',CURRENT_TIMESTAMP,'testItemDaoName',5.5,CURRENT_TIMESTAMP,'testUserItemDao');
+
+//ApiUserDetailsTest
+INSERT INTO user VALUES ('testUserDetails',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO item VALUES (3,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testAmount','testDescription',CURRENT_TIMESTAMP,'testItemDetailsName',5.5,CURRENT_TIMESTAMP,'testUserDetails');
+INSERT INTO item VALUES (4,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testAmount','testDescription',CURRENT_TIMESTAMP,'testItemDetailsName2',5.5,CURRENT_TIMESTAMP,'testUserDetails');
+
+//ApiItemControllerTest
+INSERT INTO user VALUES ('testItemController',CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testFirstName',true,'testSurname','testPassword');
+INSERT INTO item VALUES (3,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testAmount','testDescription',CURRENT_TIMESTAMP,'testItemDetailsName',5.5,CURRENT_TIMESTAMP,'testUserDetails');
+INSERT INTO item VALUES (4,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP,'testAmount','testDescription',CURRENT_TIMESTAMP,'testItemDetailsName2',5.5,CURRENT_TIMESTAMP,'testUserDetails')

@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <beans profile="default">
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations">
+                <list>
+                    <value>classpath:msql_database.properties</value>
+                </list>
+            </property>
+        </bean>
+    </beans>
+    <!-- add  to server properties
+    -Dspring.profiles.active="testing"
+    that switches to different database
+    -->
+    <beans profile="testing">
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations">
+                <list>
+                    <value>classpath:hsql_database.properties</value>
+                </list>
+            </property>
+        </bean>
+    </beans>
+
+</beans>
